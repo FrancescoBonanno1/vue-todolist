@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista della spesa</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     
     <div id="app">
         <h1>Questo è il titolo della mia lista della spesa :D</h1>
-        <h2 :class="{active : isActive}" v-for="articoli in listaSpesa">{{articoli.articolo}}</h2>
+        <h2 :class="{ active : isActive }" v-for="articoli in listaSpesa">{{articoli.articolo}}</h2>
     </div>
 
 
