@@ -2,6 +2,7 @@ const {createApp} = Vue;
     createApp({
     data : function() {
         return{
+            isActive: `active`,
             listaSpesa : [
             {
                 articolo : "Pennarello Nero",
@@ -25,4 +26,12 @@ const {createApp} = Vue;
             ]
 
         }
-    }}).mount(`#app`);
+    },
+        methods :{
+
+
+                }
+
+
+
+}).mount(`#app`);
